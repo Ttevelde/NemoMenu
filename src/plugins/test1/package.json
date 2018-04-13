@@ -1,0 +1,42 @@
+{
+  "name": "nemomenu",
+  "version": "0.0.1",
+  "description": "Menu for dreamweaver.",
+  "identifier": "com.olo.NemoMenu",
+  "homepage": "http://olo.utwente.nl/",
+  "scripts": {
+    "start": "nw --remote-debugging-port=9222",
+    "build": "gulp build"
+  },
+  "main": "src/index.html",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "authors": [
+    "Timo te Velde"
+  ],
+  "keywords": [
+    "adobe",
+    "cep",
+    "nemo",
+    "pre-u"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-edit-xml": "^3.0.0",
+    "gulp-json-editor": "^2.3.0",
+    "gulp-shell": "^0.6.5",
+    "nw": "^0.29.1",
+    "run-sequence": "^2.2.1"
+  },
+  "dependencies": {}
+}

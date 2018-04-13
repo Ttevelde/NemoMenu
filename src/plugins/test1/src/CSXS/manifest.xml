@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ExtensionManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ExtensionBundleId="com.olo.NemoMenu" ExtensionBundleName="Nemo Menu" ExtensionBundleVersion="1.0" Version="5.0">
+    <ExtensionList>
+        <Extension Id="com.olo.NemoMenu.ModalDialog" Version="0.0.1"/>
+    </ExtensionList>
+    <ExecutionEnvironment>
+        <HostList>
+            <Host Name="DRWV" Version="15.1"/>
+        </HostList>
+        <LocaleList>
+            <Locale Code="All"/>
+        </LocaleList>
+        <RequiredRuntimeList>
+            <RequiredRuntime Name="CSXS" Version="6.0"/>
+        </RequiredRuntimeList>
+    </ExecutionEnvironment>
+    <DispatchInfoList>
+        <Extension Id="com.olo.NemoMenu.ModalDialog">
+            <DispatchInfo>
+                <Resources>
+                    <MainPath>./index.html</MainPath>
+                    <ScriptPath>./jsx/nemo.jsx</ScriptPath>
+					<CEFCommandLine>
+						<Parameter>--enable-media-stream</Parameter>
+						<Parameter>--enable-nodejs</Parameter>
+                    </CEFCommandLine>
+                </Resources>
+                <Lifecycle>
+                    <AutoVisible>true</AutoVisible>
+                </Lifecycle>
+                <UI>
+                    <Type>ModalDialog</Type>
+                    <Menu>Nemo Menu</Menu>
+                    <Geometry>
+                        <Size>
+                            <Height>660</Height>
+                            <Width>820</Width>
+                        </Size>
+                        <MaxSize>
+                            <Height>800</Height>
+                            <Width>1200</Width>
+                        </MaxSize>
+                        <MinSize>
+                            <Height>500</Height>
+                            <Width>750</Width>
+                        </MinSize>
+                    </Geometry>
+                </UI>
+            </DispatchInfo>
+        </Extension>
+      
+    </DispatchInfoList>
+</ExtensionManifest>

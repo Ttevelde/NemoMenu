@@ -1,0 +1,51 @@
+{
+  "name": "nemomenu",
+  "version": "0.0.1",
+  "description": "Adobe CEP application to create nemo topic packages.",
+  "identifier": "com.olo.NemoMenu",
+  "homepage": "http://olo.utwente.nl/",
+  "scripts": {
+    "start": "nw --remote-debugging-port=9222",
+    "build": "gulp build"
+  },
+  "main": "dist/index.html",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "authors": [
+    "Timo te Velde"
+  ],
+  "keywords": [
+    "adobe",
+    "cep",
+    "nemo",
+    "menu",
+    "pre-u"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-latest": "^6.24.1",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-edit-xml": "^3.0.0",
+    "gulp-json-editor": "^2.2.2",
+    "nw": "^0.29.1",
+    "run-sequence": "^2.2.1",
+    "webpack": "^4.2.0",
+    "webpack-stream": "^4.0.2"
+  },
+  "dependencies": {
+    "gulp-shell": "^0.6.5",
+    "shell": "^0.5.0"
+  }
+}
